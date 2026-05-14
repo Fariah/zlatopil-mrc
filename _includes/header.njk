@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="header-container">
+        <div class="logo-section">
+            <div class="site-title">
+                Комунальний заклад<br>
+                "Златопільський міжшкільний ресурсний центр"<br>
+                <span style="font-size: 0.85rem; font-weight: 500; color: var(--text-light);">Златопільської міської ради Харківської області</span>
+            </div>
+        </div>
+        <button class="menu-toggle" id="mobile-menu-btn" aria-label="Відкрити меню">☰</button>
+        <nav class="main-nav" id="main-nav">
+            <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Головна</a>
+            <a href="/important/" {% if page.url == "/important/" %}class="active"{% endif %}>ВАЖЛИВЕ</a>
+            <div class="nav-dropdown">
+                <a href="/distance-learning/">
+                    Дистанційне навчання
+                    <span style="font-size: 0.7em;">▼</span>
+                </a>
+                <div class="nav-dropdown-content">
+                    <a href="/driving-course/">Курс "Основи водійської справи"</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

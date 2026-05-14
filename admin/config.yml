@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main # Переконайтеся, що це співпадає з вашою основною гілкою
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "pages"
+    label: "Сторінки"
+    files:
+      - file: "index.md"
+        label: "Головна"
+        name: "index"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "about.md"
+        label: "Про нас"
+        name: "about"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
