@@ -14,7 +14,7 @@
     <div class="container">
         {% include "sidebar.njk" %}
         
-        <main class="content">
+        <main class="content" data-cms-bind="#content">
             <nav class="breadcrumbs" aria-label="Breadcrumb">
                 <a href="/">Головна</a>
                 {% if page.url != "/" %}

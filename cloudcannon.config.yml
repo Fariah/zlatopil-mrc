@@ -1,0 +1,23 @@
+# CloudCannon Configuration
+source: .
+output: _site
+
+# Define where your collections are
+collections_config:
+  pages:
+    path: .
+    output: true
+    filter:
+      base: none
+      glob: "*.md"
+    url: "/[slug]/"
+
+# Paths to assets
+paths:
+  uploads: assets/img
+  static: .
+
+# Common data for the editor
+data_config:
+  header: _includes/header.njk
+  sidebar: _includes/sidebar.njk
