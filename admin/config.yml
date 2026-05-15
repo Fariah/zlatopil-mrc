@@ -21,3 +21,231 @@ collections:
         fields:
           - {label: "Заголовок", name: "title", widget: "string"}
           - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "accessibility.md"
+        label: "Умови доступності для дітей з особливими освітніми потребами"
+        name: "accessibility"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "accreditation.md"
+        label: "Сертифікат про державну акредитацію"
+        name: "accreditation"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "admission-rules.md"
+        label: "Правила прийому здобувачів освіти"
+        name: "admission-rules"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "annual-report.md"
+        label: "Річний звіт про діяльність закладу"
+        name: "annual-report"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "anti-bullying.md"
+        label: "Запобігання та протидія булінгу"
+        name: "anti-bullying"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "attestation-plan.md"
+        label: "Перспективний план-графік підвищення кваліфікації та атестації"
+        name: "attestation-plan"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "attestation.md"
+        label: "Свідоцтво про атестацію"
+        name: "attestation"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "behavior-rules.md"
+        label: "Правила поведінки здобувача освіти в закладі освіти"
+        name: "behavior-rules"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "bullying-procedure.md"
+        label: "Порядок подання та розгляду заяв про випадки булінгу (цькування)"
+        name: "bullying-procedure"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "directions.md"
+        label: "Напрямки підготовки учнів КЗ \"ЗМРЦ\""
+        name: "directions"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "distance-learning.md"
+        label: "Дистанційне навчання"
+        name: "distance-learning"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "driving-course.md"
+        label: "Курс \"Основи водійської справи\""
+        name: "driving-course"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "educational-programs.md"
+        label: "Освітні програми"
+        name: "educational-programs"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "entrants.md"
+        label: "Вступникам"
+        name: "entrants"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "estimate.md"
+        label: "Кошторис закладу і використання позабюджетних коштів, благодійних внесків"
+        name: "estimate"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "facilities.md"
+        label: "Матеріально-технічна база"
+        name: "facilities"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "graduates.md"
+        label: "Випускникам"
+        name: "graduates"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "history.md"
+        label: "Історія закладу"
+        name: "history"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "important.md"
+        label: "Курс \"Основи водійської справи\""
+        name: "important"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "language.md"
+        label: "Мова освітнього процесу"
+        name: "language"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "license.md"
+        label: "Ліцензія"
+        name: "license"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "licensed-volume.md"
+        label: "Ліцензований обсяг та фактична кількість осіб, які навчаються у КЗ \"ЗМРЦ\""
+        name: "licensed-volume"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "links.md"
+        label: "Корисні посилання"
+        name: "links"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "management.md"
+        label: "Управління"
+        name: "management"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "methodical-commission-schedule.md"
+        label: "Графік і тематика засідань методичної комісії з автосправи"
+        name: "methodical-commission-schedule"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "methodical-commission.md"
+        label: "Методична комісія з автосправи"
+        name: "methodical-commission"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "methodical.md"
+        label: "Методична робота"
+        name: "methodical"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "pedagogical-staff.md"
+        label: "Педагогічний колектив"
+        name: "pedagogical-staff"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "pedagogichni-radi-seminar.md"
+        label: "Педагогічна рада"
+        name: "pedagogichni-radi-seminar"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "psychological-service.md"
+        label: "Психологічна служба"
+        name: "psychological-service"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "safety.md"
+        label: "Запобігання дитячого травматизму"
+        name: "safety"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "schedule.md"
+        label: "Освітній процес та Розклад"
+        name: "schedule"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "statute.md"
+        label: "Статут закладу"
+        name: "statute"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "structure.md"
+        label: "Структура і органи управління КЗ \"ЗМРЦ\""
+        name: "structure"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "study-plans.md"
+        label: "Робочі навчальні плани"
+        name: "study-plans"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "traffic-rules.md"
+        label: "On-line тести ПДР"
+        name: "traffic-rules"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "transparency.md"
+        label: "Прозорість та інформаційна відкритість закладу освіти"
+        name: "transparency"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
+      - file: "vacancies.md"
+        label: "КЗ \"Златопільський міжшкільний ресурсний центр\""
+        name: "vacancies"
+        fields:
+          - {label: "Заголовок", name: "title", widget: "string"}
+          - {label: "Тіло", name: "body", widget: "markdown"}
