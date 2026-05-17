@@ -1,13 +1,83 @@
 <aside class="sidebar" id="sidebar">
     <h3>Меню сайту</h3>
     <nav class="sidebar-nav">
-        <a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>Про КЗ "ЗМРЦ"</a>
-        <a href="/management/" {% if page.url == "/management/" %}class="active"{% endif %}>Управління</a>
-        <a href="/transparency/" {% if page.url == "/transparency/" %}class="active"{% endif %}>Прозорість та інформаційна відкритість</a>
-        <a href="/entrants/" {% if page.url == "/entrants/" %}class="active"{% endif %}>Вступникам</a>
+        <!-- Розділ: Про КЗ "ЗМРЦ" -->
+        {% set aboutPages = ["/about/", "/history/"] %}
+        <a href="/about/" {% if page.url in aboutPages %}class="active parent-active"{% endif %}>Про КЗ "ЗМРЦ"</a>
+        {% if page.url in aboutPages %}
+        <div class="submenu-static">
+            <a href="/history/" class="submenu-item {% if page.url == '/history/' %}active{% endif %}">Історія закладу</a>
+        </div>
+        {% endif %}
+
+        <!-- Розділ: Управління -->
+        {% set managementPages = ["/management/", "/pedagogical-staff/", "/vacancies/", "/methodical-commission/", "/psychological-service/"] %}
+        <a href="/management/" {% if page.url in managementPages %}class="active parent-active"{% endif %}>Управління</a>
+        {% if page.url in managementPages %}
+        <div class="submenu-static">
+            <a href="/pedagogical-staff/" class="submenu-item {% if page.url == '/pedagogical-staff/' %}active{% endif %}">Педагогічний колектив</a>
+            <a href="/vacancies/" class="submenu-item {% if page.url == '/vacancies/' %}active{% endif %}">Наявність вакантних посад</a>
+            <a href="/methodical-commission/" class="submenu-item {% if page.url == '/methodical-commission/' %}active{% endif %}">Методична комісія з автосправи</a>
+            <a href="/psychological-service/" class="submenu-item {% if page.url == '/psychological-service/' %}active{% endif %}">Психологічна служба</a>
+        </div>
+        {% endif %}
+
+        <!-- Розділ: Прозорість -->
+        {% set transparencyPages = [
+            "/transparency/", "/statute/", "/license/", "/attestation/", "/accreditation/", 
+            "/structure/", "/educational-programs/", "/licensed-volume/", "/language/", 
+            "/annual-report/", "/accessibility/", "/estimate/", "/behavior-rules/"
+        ] %}
+        <a href="/transparency/" {% if page.url in transparencyPages %}class="active parent-active"{% endif %}>Прозорість та інформаційна відкритість</a>
+        {% if page.url in transparencyPages %}
+        <div class="submenu-static">
+            <a href="/statute/" class="submenu-item {% if page.url == '/statute/' %}active{% endif %}">Статут закладу</a>
+            <a href="/license/" class="submenu-item {% if page.url == '/license/' %}active{% endif %}">Ліцензія</a>
+            <a href="/attestation/" class="submenu-item {% if page.url == '/attestation/' %}active{% endif %}">Свідоцтво про атестацію</a>
+            <a href="/accreditation/" class="submenu-item {% if page.url == '/accreditation/' %}active{% endif %}">Сертифікат про державну акредитацію</a>
+            <a href="/structure/" class="submenu-item {% if page.url == '/structure/' %}active{% endif %}">Структура і органи управління</a>
+            <a href="/educational-programs/" class="submenu-item {% if page.url == '/educational-programs/' %}active{% endif %}">Освітні програми</a>
+            <a href="/licensed-volume/" class="submenu-item {% if page.url == '/licensed-volume/' %}active{% endif %}">Ліцензований обсяг</a>
+            <a href="/language/" class="submenu-item {% if page.url == '/language/' %}active{% endif %}">Мова освітнього процесу</a>
+            <a href="/annual-report/" class="submenu-item {% if page.url == '/annual-report/' %}active{% endif %}">Річний звіт</a>
+            <a href="/accessibility/" class="submenu-item {% if page.url == '/accessibility/' %}active{% endif %}">Умови доступності</a>
+            <a href="/estimate/" class="submenu-item {% if page.url == '/estimate/' %}active{% endif %}">Кошторис закладу</a>
+            <a href="/behavior-rules/" class="submenu-item {% if page.url == '/behavior-rules/' %}active{% endif %}">Правила поведінки</a>
+        </div>
+        {% endif %}
+
+        <!-- Розділ: Вступникам -->
+        {% set entrantsPages = ["/entrants/", "/admission-rules/", "/directions/"] %}
+        <a href="/entrants/" {% if page.url in entrantsPages %}class="active parent-active"{% endif %}>Вступникам</a>
+        {% if page.url in entrantsPages %}
+        <div class="submenu-static">
+            <a href="/admission-rules/" class="submenu-item {% if page.url == '/admission-rules/' %}active{% endif %}">Правила прийому</a>
+            <a href="/directions/" class="submenu-item {% if page.url == '/directions/' %}active{% endif %}">Напрямки підготовки</a>
+        </div>
+        {% endif %}
+
         <a href="/graduates/" {% if page.url == "/graduates/" %}class="active"{% endif %}>Випускникам</a>
-        <a href="/schedule/" {% if page.url == "/schedule/" %}class="active"{% endif %}>Освітній процес (Розклад)</a>
-        <a href="/methodical/" {% if page.url == "/methodical/" %}class="active"{% endif %}>Методична робота</a>
+
+        <!-- Розділ: Освітній процес -->
+        {% set schedulePages = ["/schedule/", "/study-plans/"] %}
+        <a href="/schedule/" {% if page.url in schedulePages %}class="active parent-active"{% endif %}>Освітній процес (Розклад)</a>
+        {% if page.url in schedulePages %}
+        <div class="submenu-static">
+            <a href="/study-plans/" class="submenu-item {% if page.url == '/study-plans/' %}active{% endif %}">Робочі навчальні плани</a>
+        </div>
+        {% endif %}
+
+        <!-- Розділ: Методична робота -->
+        {% set methodicalPages = ["/methodical/", "/attestation-plan/", "/methodical-commission-schedule/", "/pedagogichni-radi-seminar/"] %}
+        <a href="/methodical/" {% if page.url in methodicalPages %}class="active parent-active"{% endif %}>Методична робота</a>
+        {% if page.url in methodicalPages %}
+        <div class="submenu-static">
+            <a href="/attestation-plan/" class="submenu-item {% if page.url == '/attestation-plan/' %}active{% endif %}">План атестації</a>
+            <a href="/methodical-commission-schedule/" class="submenu-item {% if page.url == '/methodical-commission-schedule/' %}active{% endif %}">Графік засідань</a>
+            <a href="/pedagogichni-radi-seminar/" class="submenu-item {% if page.url == '/pedagogichni-radi-seminar/' %}active{% endif %}">Педагогічна рада</a>
+        </div>
+        {% endif %}
+
         <a href="/bullying-procedure/" {% if page.url == "/bullying-procedure/" %}class="active"{% endif %}>Порядок розгляду заяв про булінг</a>
         <a href="/facilities/" {% if page.url == "/facilities/" %}class="active"{% endif %}>Матеріально-технічна база</a>
         <a href="/anti-bullying/" {% if page.url == "/anti-bullying/" %}class="active"{% endif %}>Запобігання та протидія булінгу</a>

@@ -29,7 +29,16 @@
 
             {{ content | safe }}
         </main>
+
+        {% include "sidebar-right.njk" %}
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Дозволяється та вітається будь-яке неспотворене цитування матеріалів цього ресурсу.</p>
+            <p>&copy; 2026 Комунальний заклад "Златопільський міжшкільний ресурсний центр Златопільської міської ради Харківської області". Всі права захищені.</p>
+        </div>
+    </footer>
 
     <script src="/js/main.js"></script>
     <script>
